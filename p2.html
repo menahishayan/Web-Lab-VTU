@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>P2</title>
+    <script type="text/JavaScript">
+            window.onload = (e) => {
+                table = document.getElementById("table")
+                for(let i in [...Array(10).keys()]) {
+                    table.innerHTML += `<tr><td>${i}</td><td>${i*i}</td><td>${i*i*i}</td></tr>`
+                }
+            }
+        </script>
+</head>
+
+<body>
+    <h1>Squares and Cubes</h1>
+    <table id="table">
+        <tr>
+            <th>Number</th>
+            <th>Square</th>
+            <th>Cube</th>
+        </tr>
+    </table>
+</body>
+
+</html>

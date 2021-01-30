@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>P3</title>
+        <script type="text/JavaScript">
+            window.onload = (e) => {
+                let text = document.getElementById("text")
+                let size = 5
+                let grow = true
+
+                setInterval(() => {
+                    if(grow) {
+                        text.innerHTML = 'Text Growing'
+                        text.setAttribute('style','font-size: ' + size++ + "px; color:red;")
+                        if(size == 50) grow = false
+                    } else {
+                        text.innerHTML = 'Text Shrinking'
+                        text.setAttribute('style','font-size: ' + size-- + "px; color:blue;")
+                        if(size == 5) grow = true
+                    }
+                }, 100);
+            }
+        </script>
+    </head>
+    <body>
+        <p id="text"></p>
+    </body>
+</html>

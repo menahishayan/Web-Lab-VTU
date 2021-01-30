@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>P1</title>
+        <script type="text/JavaScript">
+            const calc = (op) => {
+                document.getElementById('ans').innerHTML = eval(document.getElementById('A').value + op + document.getElementById('B').value)
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <input type="number" id="A" value="0">
+        <input type="number" id="B" value="0">
+        <button id="+" onClick="calc(this.id)">+</button>
+        <button id="-" onClick="calc(this.id)">-</button>
+        <button id="*" onClick="calc(this.id)">*</button>
+        <button id="/" onClick="calc(this.id)">/</button>
+        <p id="ans"></p>
+    </body>
+</html>
