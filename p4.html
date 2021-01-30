@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>P4</title>
+    <script type="text/JavaScript">
+        function str(s) {
+            return s.indexOf((s.match(/[aeiou]/ig) || "")[0])
+        }
+        function num(n) {
+            return parseInt((n + "").split("").reverse().join(""))
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="String" onblur="document.getElementById('vowel').innerHTML = str(this.value)">
+    <p id="vowel"></p>
+    <input type="number" placeholder="Number" onblur="document.getElementById('reverse').innerHTML = num(this.value)">
+    <p id="reverse"></p>
+</body>
+
+</html>
